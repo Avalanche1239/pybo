@@ -1,0 +1,8 @@
+<nav id="sidebar" class="border-top border-secondary">
+    <div class="list-group">
+        <a class="rounded-0 list-group-item list-group-item-action list-group-item-light {% if category.name == 'qna' %}active{% endif %}"
+           href="{% url 'pybo:index' %}">질문답변</a>
+        <a class="rounded-0 list-group-item list-group-item-action list-group-item-light {% if category.name == 'free' %}active{% endif %}"
+           href="{% url 'pybo:free_list' %}">자유게시판</a>
+    </div>
+</nav>
